@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Anasayfa - {{ block.super }}
+{% endblock %}
+
+{% block body %}
+
+    {# Jumbotron #}
+    <div class="jumbotron deneme" style="background-image: url({% static 'img/home-bg.jpg' %});">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3" style="text-align:center;">
+                    <h1 >sonmezmusa.com</h1>
+                    <p>Teknoloji, Tasarım, Yazılım</p>
+                    {#<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>#}
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container-fluid">
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                {% include 'messages.html' %}
+                <h1>Hoşgeldin, <b>{{ isim }}</b></h1>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis
+                    nunc ex, non ultricies massa porttitor ac. Donec vel lectus tellus. Quisque
+                    consequat ultrices nulla, et ultrices risus maximus at. Duis imperdiet
+                    orci ipsum, vitae ultrices lectus placerat id. Suspendisse id laoreet dolor.
+                    Sed pharetra est tempor nulla rhoncus volutpat. Fusce blandit fermentum
+                    eros at porta. Cras vestibulum nisi sed nibh eleifend, cursus sollicitudin
+                    odio aliquam. Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos.
+                </p>
+    
+                <p>
+                    Ut eget eros lacinia, convallis arcu nec, fermentum purus. Suspendisse
+                    porttitor finibus ligula, quis pulvinar mi consectetur id. Duis at nibh
+                    id mauris condimentum faucibus. Vestibulum tellus est, ultrices et purus
+                    id, mollis sollicitudin urna. Curabitur semper nunc non varius eleifend.
+                    Phasellus aliquam neque nec diam malesuada, sit amet interdum erat
+                    consectetur. Vivamus ut fermentum dolor. Aliquam porttitor, sem in
+                    dapibus blandit, eros erat fermentum sem, vel vestibulum mauris dolor
+                    vel metus. Mauris sagittis tortor eget dui ultricies, gravida ultricies
+                    mauris tristique. Proin accumsan nisi vitae tempus scelerisque.
+                </p>
+    
+                <p>
+                    In cursus dictum libero, in ullamcorper nisl. Sed malesuada lectus
+                    malesuada metus congue blandit. Ut at placerat lorem, quis lacinia
+                    libero. Ut accumsan mollis tempus. Praesent vel neque finibus, congue
+                    ligula vel, ultrices felis. Ut sed mattis velit. Praesent non augue
+                    quis ante auctor euismod. Integer consequat lobortis ligula, eget
+                    scelerisque est tempus nec. Cras malesuada nulla in elit pharetra
+                    venenatis. Aenean quam nisl, pharetra vel quam eget, vestibulum
+                    pulvinar ex.
+                <p>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

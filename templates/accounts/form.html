@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block body %}
+
+    {# Jumbotron #}
+    <div class="jumbotron deneme" style="background-image: url({% static 'img/handGlide.jpg' %});">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3" style="text-align:center;">
+                    <h1 >{{ title }}</h1><br>
+                    <p>Teknoloji, Tasarım, Yazılım</p>
+                    {#<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>#}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h1>{{ title }}</h1>
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <input class="btn btn-primary" type="submit" value="{{ title }}">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+{% endblock %}

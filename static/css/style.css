@@ -1,0 +1,29 @@
+body {
+  padding-top: 51px;
+}
+
+.deneme {
+  height: 300px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.jumbotron h1{
+  color: white;
+  opacity: 0.5;
+}
+
+.jumbotron p{
+  color: white;
+  opacity: 0.5;
+}
+
+.footerP{
+  color: white;
+  opacity: 0.8;
+}
+
+.footerDiv{
+  background-color: rgba(0, 0, 0, 0.970);
+}
